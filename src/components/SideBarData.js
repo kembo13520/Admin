@@ -2,30 +2,25 @@ import React from 'react'
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
+import * as BsIcons from 'react-icons/bs';
 
 export const SideBarData = [
     {
-        title: 'Home',
+        title: 'Actor',
         path: '/',
-        icon: <AiIcons.AiFillHome />,
+        icon: <AiIcons.AiFillStar />,
         cName: 'nav-text'
     },
     {
-        title: 'Report',
-        path: '/reports',
-        icon: <IoIcons.IoIosPaper />,
+        title: 'User',
+        path: '/user',
+        icon: <BsIcons.BsPeopleCircle />,
         cName: 'nav-text'
     },
     {
-        title: 'Products',
-        path: '/products',
-        icon: <FaIcons.FaCartPlus />,
-        cName: 'nav-text'
-    },
-    {
-        title: 'Team',
-        path: '/team',
-        icon: <IoIcons.IoMdPeople />,
+        title: 'Movie',
+        path: '/movie',
+        icon: <IoIcons.IoIosFilm />,
         cName: 'nav-text'
     },
     {

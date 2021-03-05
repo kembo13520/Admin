@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css';
+import './Actor.css';
 import firebase from '../Firebase';
 
-class Home extends Component {
+class Actor extends Component {
   constructor(props) {
     super(props);
     this.ref = firebase.firestore().collection('actor');
@@ -67,4 +67,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Actor;

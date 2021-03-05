@@ -1,17 +1,21 @@
-import * as firebase from 'firebase';
-import firestore from 'firebase/firestore'
+import firebase from 'firebase/app';
+import 'firebase/firestore'
+import "firebase/storage";
 
 const settings = {timestampsInSnapshots: true};
 
 const config = {
-  apiKey: "AIzaSyCP7cjatL6T7NIejEzW8bha35w44s6xY6I",
-  authDomain: "ticketland-cb74c.firebaseapp.com",
-  databaseURL: "https://ticketland-cb74c-default-rtdb.firebaseio.com",
-  projectId: "ticketland-cb74c",
-  storageBucket: "ticketland-cb74c.appspot.com"
+  apiKey: "AIzaSyAq5mHRY5-jMkFzHpiURMAaqneSBwMy3f8",
+  authDomain: "admin-23a86.firebaseapp.com",
+  databaseURL: "https://admin-23a86-default-rtdb.firebaseio.com",
+  projectId: "admin-23a86",
+  storageBucket: "admin-23a86.appspot.com",
+  messagingSenderId: "102285677124",
 };
 firebase.initializeApp(config);
 
 firebase.firestore().settings(settings);
 
-export default firebase;
+const storage = firebase.storage();
+
+export {storage, firebase as default};
